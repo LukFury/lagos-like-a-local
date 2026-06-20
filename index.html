@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lagos, Like a Local</title>
+
+  <!-- Fonts per DESIGN.md: Fredoka for headlines, Inter for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- 1. Hero (DESIGN.md section 1) -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Lagos, Like a Local</h1>
+      <p>The spots your guides actually go to</p>
+      <div class="tip-jar-wrap">
+        <a class="tip-jar-button" href="https://revolut.me/lukasz_ba/pocket/6c2gW6Giit" target="_blank" rel="noopener">
+          <span class="tip-jar-icon">🍻</span>
+          <span class="tip-jar-text">Buy your guide a beer</span>
+        </a>
+        <span class="tip-jar-label">← Tip Jar</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Sticky category selector (DESIGN.md section 2) -->
+  <nav class="chip-bar" aria-label="Categories">
+    <a href="#food" class="chip" data-category="food">🍽️ Food</a>
+    <a href="#beaches" class="chip" data-category="beaches">🌊 Beaches</a>
+    <a href="#viewpoints" class="chip" data-category="viewpoints">⛰️ Viewpoints</a>
+    <a href="#nightlife" class="chip" data-category="nightlife">🌙 Nightlife</a>
+    <a href="#activities" class="chip" data-category="activities">🧭 Activities</a>
+  </nav>
+
+  <!-- 3. Recommendation sections (DESIGN.md section 3) -->
+  <main>
+
+    <section id="food" class="category-section" data-category="food">
+      <h2>🍽️ Food</h2>
+      <div class="card-list">
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=A+Forja+Restaurant+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/food-a-forja.jpg" alt="A Forja" loading="lazy" />
+          <div class="card-body">
+            <h3>A Forja</h3>
+            <p>Old-town institution, no reservations, communal tables — they just keep grilling fresh fish until they run out, so go early or queue.</p>
+            <span class="tag">€€</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=O+Camilo+Restaurant+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/food-o-camilo.jpg" alt="O Camilo" loading="lazy" />
+          <div class="card-body">
+            <h3>O Camilo</h3>
+            <p>Family-run for 40+ years right on the cliff above Camilo beach — book ahead for the sunset table.</p>
+            <span class="tag">€€€</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Prato+Cheio+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/food-prato-cheio.jpg" alt="Prato Cheio" loading="lazy" />
+          <div class="card-body">
+            <h3>Prato Cheio</h3>
+            <p>Locals' go-to for cataplana and grilled fish — reserve a day ahead or you won't get a table.</p>
+            <span class="tag">€€</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Twin+Fin+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/food-twin-fin.jpg" alt="Twin Fin" loading="lazy" />
+          <div class="card-body">
+            <h3>Twin Fin</h3>
+            <p>Boho surf-café vibe, best brunch in town — the banana bread is worth the wait.</p>
+            <span class="tag">€€</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Abigail%27s+Cafe+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/food-abigails.jpg" alt="Abigail's Café" loading="lazy" />
+          <div class="card-body">
+            <h3>Abigail's Café</h3>
+            <p>Small, relaxed old-town spot for a slow coffee and pancakes before the boat.</p>
+            <span class="tag">€</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="beaches" class="category-section" data-category="beaches">
+      <h2>🌊 Beaches</h2>
+      <div class="card-list">
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Praia+Dona+Ana+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/beach-dona-ana.jpg" alt="Praia Dona Ana" loading="lazy" />
+          <div class="card-body">
+            <h3>Praia Dona Ana</h3>
+            <p>Golden cliffs, calm water, the postcard shot — about 20 min walk from old town.</p>
+            <span class="tag">Free</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Praia+do+Camilo+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/beach-camilo.jpg" alt="Praia do Camilo" loading="lazy" />
+          <div class="card-body">
+            <h3>Praia do Camilo</h3>
+            <p>Stairs down are closed right now — but the clifftop view over the cove is still unreal on its own.</p>
+            <span class="tag">Free · view only</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Praia+do+Pinh%C3%A3o+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/beach-pinhao.jpg" alt="Praia do Pinhão" loading="lazy" />
+          <div class="card-body">
+            <h3>Praia do Pinhão</h3>
+            <p>No safe way down anymore, but the tiny cove just past Dona Ana is worth a look from the clifftop path.</p>
+            <span class="tag">Free · view only</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Praia+de+Porto+de+M%C3%B3s+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/beach-porto-de-mos.jpg" alt="Praia de Porto de Mós" loading="lazy" />
+          <div class="card-body">
+            <h3>Praia de Porto de Mós</h3>
+            <p>Open Atlantic side, real waves if you want surf instead of calm water.</p>
+            <span class="tag">Free</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Meia+Praia+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/beach-meia-praia.jpg" alt="Meia Praia" loading="lazy" />
+          <div class="card-body">
+            <h3>Meia Praia</h3>
+            <p>5km of sand, empty compared to the cove beaches — good for a long walk.</p>
+            <span class="tag">Free</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="viewpoints" class="category-section" data-category="viewpoints">
+      <h2>⛰️ Viewpoints</h2>
+      <div class="card-list">
+        <a class="card" href="https://maps.app.goo.gl/Rx9KxJmpZGdUJfjq8" target="_blank" rel="noopener">
+          <img src="images/viewpoint-piedade-cliffs.jpg" alt="Miradouro da Ponta da Piedade" loading="lazy" />
+          <div class="card-body">
+            <h3>Miradouro da Ponta da Piedade</h3>
+            <p>The cliffs and grottoes view everyone's seen on Instagram, for good reason.</p>
+            <span class="tag">Free</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Miradouro+Praia+do+Canavial+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/viewpoint-canavial.jpg" alt="Miradouro da Praia do Canavial" loading="lazy" />
+          <div class="card-body">
+            <h3>Miradouro da Praia do Canavial</h3>
+            <p>Locals' actual sunset spot, 20 min past the lighthouse, way less crowded.</p>
+            <span class="tag">Free</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Praia+do+Barranco+do+Martinho+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/viewpoint-canavial.jpg" alt="Viewpoint over Praia do Barranco do Martinho" loading="lazy" />
+          <div class="card-body">
+            <h3>Praia do Barranco do Martinho viewpoint</h3>
+            <p>Hidden cove below, best sunset on the whole headland.</p>
+            <span class="tag">Free</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Farol+da+Ponta+da+Piedade+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/viewpoint-piedade-lighthouse.jpg" alt="Ponta da Piedade Lighthouse boardwalk" loading="lazy" />
+          <div class="card-body">
+            <h3>Ponta da Piedade lighthouse boardwalk</h3>
+            <p>Keep walking past the main viewpoint, it gets better and emptier.</p>
+            <span class="tag">Free</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Forte+Ponta+da+Bandeira+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/viewpoint-forte-bandeira.jpg" alt="Forte Ponta da Bandeira" loading="lazy" />
+          <div class="card-body">
+            <h3>Forte Ponta da Bandeira</h3>
+            <p>Small fort guarding the harbor mouth, great marina view for the price of a coffee.</p>
+            <span class="tag">From €2</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="nightlife" class="category-section" data-category="nightlife">
+      <h2>🌙 Nightlife</h2>
+      <div class="card-list">
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Three+Monkeys+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/nightlife-three-monkeys.jpg" alt="Three Monkeys" loading="lazy" />
+          <div class="card-body">
+            <h3>Three Monkeys</h3>
+            <p>Casual, social, pool tables — a relaxed first stop before the night gets loud.</p>
+            <span class="tag">€€</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Black+Cat+Bar+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/night-cocktail.jpg" alt="Black Cat Bar" loading="lazy" />
+          <div class="card-body">
+            <h3>Black Cat Bar</h3>
+            <p>Two cocktails for €5, best value pour in town.</p>
+            <span class="tag">€</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Amuras+Bar+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/nightlife-amuras.jpg" alt="Amuras Bar" loading="lazy" />
+          <div class="card-body">
+            <h3>Amuras Bar</h3>
+            <p>Marina-front, quiet cocktail with a sunset — not a party bar.</p>
+            <span class="tag">€€</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Bahia+Beach+Club+Meia+Praia+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/nightlife-bahia-beach-club.jpg" alt="Bahia Beach Club" loading="lazy" />
+          <div class="card-body">
+            <h3>Bahia Beach Club</h3>
+            <p>Right on Meia Praia, ocean views with live music on summer weekends — go for sunset, stay for the night.</p>
+            <span class="tag">€€</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Joe%27s+Garage+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/nightlife-joes-garage.jpg" alt="Joe's Garage" loading="lazy" />
+          <div class="card-body">
+            <h3>Joe's Garage</h3>
+            <p>No cover, open till the early hours — beer pong, karaoke, and dancing if you want to stay out late.</p>
+            <span class="tag">€€</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="activities" class="category-section" data-category="activities">
+      <h2>🧭 Activities</h2>
+      <div class="card-list">
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a+Lu%C3%ADs+de+Cam%C3%B5es+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/activity-old-town.jpg" alt="Lagos Old Town walk" loading="lazy" />
+          <div class="card-body">
+            <h3>Lagos Old Town walk</h3>
+            <p>Praça Luís de Camões, the Church of Saint Anthony, cobbled streets — an hour well spent before or after the water.</p>
+            <span class="tag">Free</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Mercado+Municipal+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/activity-mercado.jpg" alt="Mercado Municipal de Lagos" loading="lazy" />
+          <div class="card-body">
+            <h3>Mercado Municipal de Lagos</h3>
+            <p>Real working fish and produce market — the rooftop café has a great view of the promenade.</p>
+            <span class="tag">Free</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Cabo+de+S%C3%A3o+Vicente+Portugal" target="_blank" rel="noopener">
+          <img src="images/activity-cabo-sao-vicente.jpg" alt="Cabo de São Vicente / Sagres day trip" loading="lazy" />
+          <div class="card-body">
+            <h3>Cabo de São Vicente / Sagres day trip</h3>
+            <p>Westernmost point of mainland Europe, dramatic and worth the half-day.</p>
+            <span class="tag">Free</span>
+          </div>
+        </a>
+        <a class="card" href="https://www.google.com/maps/search/?api=1&query=Bike+Rental+Lagos+Portugal" target="_blank" rel="noopener">
+          <img src="images/activity-bike-rental.jpg" alt="Bike rental along the coast" loading="lazy" />
+          <div class="card-body">
+            <h3>Bike rental along the coastal path</h3>
+            <p>Cheap, easy way to cover more cliffs and beaches than you could on foot in a single afternoon.</p>
+            <span class="tag">From €10</span>
+          </div>
+        </a>
+        <a class="card" href="https://maps.app.goo.gl/u7qyjKfJL7tyAwKP7" target="_blank" rel="noopener">
+          <img src="images/viewpoint-piedade-cliffs.jpg" alt="Ponta da Piedade boardwalk" loading="lazy" />
+          <div class="card-body">
+            <h3>Ponta da Piedade boardwalk</h3>
+            <p>New ~2km clifftop boardwalk along the sandstone cliffs and sea stacks — a proper walk, not just a photo stop.</p>
+            <span class="tag">Free</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4. Footer (DESIGN.md section 4) -->
+  <footer class="site-footer">
+    <p>Made by your guides, for you.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
